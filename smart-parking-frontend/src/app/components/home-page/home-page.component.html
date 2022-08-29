@@ -1,0 +1,57 @@
+<div class="example-button-container">
+  <button *ngIf="adminShow()" mat-mini-fab (click)="onAdminClick()">
+    <mat-icon>login</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="admin-btn-text">Admin Pannel</span>
+  </button>
+  <br>
+  <br>
+  <button (click)="onClickReload()">
+    <mat-icon>refresh</mat-icon>
+  </button>
+</div>
+<div class="container main-div">
+  <mat-grid-list cols="3" rowHeight="1:1">
+    <ng-container>
+      <mat-grid-tile>
+        <a (click)="onClick()" (click)=" onBooking(1)">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><b>Slot No : </b>1</mat-card-title>
+              <mat-card-subtitle><b>Available : </b><span *ngIf="!isSlot1Available()">No</span><span *ngIf="isSlot1Available()">Yes</span></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-md-image
+              src="https://www.bing.com/th?id=OIP.aPDaLUXVswNvJVFKgK1jUAHaFj&w=180&h=120&c=2&rs=1&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" />
+          </mat-card>
+        </a>
+      </mat-grid-tile>
+    </ng-container>
+    <ng-container>
+      <mat-grid-tile>
+        <a (click)="onClick()" (click)=" onBooking(2)">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><b>Slot No : </b>2</mat-card-title>
+              <mat-card-subtitle><b>Available : </b><span *ngIf="!isSlot2Available()">No</span><span *ngIf="isSlot2Available()">Yes</span></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-md-image
+              src="https://www.bing.com/th?id=OIP.aPDaLUXVswNvJVFKgK1jUAHaFj&w=180&h=120&c=2&rs=1&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" />
+          </mat-card>
+        </a>
+      </mat-grid-tile>
+    </ng-container>
+    <ng-container>
+      <mat-grid-tile>
+        <a (click)="onClick()" (click)=" onBooking(3)">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><b>Slot No : </b>3</mat-card-title>
+              <mat-card-subtitle><b>Available : </b><span *ngIf="!isSlot3Available()">No</span><span *ngIf="isSlot3Available()">Yes</span></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-md-image
+              src="https://www.bing.com/th?id=OIP.aPDaLUXVswNvJVFKgK1jUAHaFj&w=180&h=120&c=2&rs=1&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1" />
+          </mat-card>
+        </a>
+      </mat-grid-tile>
+    </ng-container>
+  </mat-grid-list>
+</div>

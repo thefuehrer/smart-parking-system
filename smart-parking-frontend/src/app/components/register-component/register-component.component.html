@@ -1,0 +1,38 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="100">
+        <mat-toolbar class="mat-toolbar-part" color="primary">
+            Register
+            <button class="btn btn-secondary close-btn"(click)="onClose()">X</button>
+        </mat-toolbar>
+        <form fxLayoutAlign="strech" fxLayout="column" class="login-form" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput name="userName" [(ngModel)]="regisUser.username" placeholder="Username">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput name="firstName" [(ngModel)]="regisUser.firstName" placeholder="First Name">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput name="lastName" [(ngModel)]="regisUser.lastName" placeholder="Last Name">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput name="password" [(ngModel)]="regisUser.password" placeholder="Password">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Vehicle No</mat-label>
+                <input matInput name="vehicleNo" [(ngModel)]="regisUser.vehicleNo"
+                    placeholder="Vehicle No">
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="warn" type="submit">Register</button>
+        </form>
+
+    </mat-card>
+</div>

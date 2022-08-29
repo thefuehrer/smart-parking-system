@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="main-navbar-light">
+    <div class="container-fluid">
+        <span class="navbar-text">Smart Parking System</span>
+        <span *ngIf="!isLoggedIn()" class="login-signin-text">
+            <a (click)="onClickForLogin()">login</a>
+            /
+            <a (click)="onClickForRegister()">register</a>
+        </span>
+        <span *ngIf="isLoggedIn()" class="login-signin-text">
+            <a (click)="logOut()">logout</a>
+        </span>
+    </div>
+</mat-toolbar>

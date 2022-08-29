@@ -1,0 +1,28 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="100">
+        <mat-toolbar class="mat-toolbar-part" color="primary">
+            Bookings
+            <button class="btn btn-secondary close-btn"(click)="onClose()">X</button>
+        </mat-toolbar>
+        <form fxLayoutAlign="strech" fxLayout="column" class="login-form" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Vehicle No</mat-label>
+                <input matInput name="firstName" [(ngModel)]="bookings.vehicleNo" placeholder="Vechile no">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Slot No</mat-label>
+                <input matInput name="firstName" [(ngModel)]="bookings.slotNo" placeholder="Slot no">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Booked To </mat-label>
+                <input matInput name="userName" [(ngModel)]="bookings.bookedTo" placeholder="Time in hours">
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="warn" type="submit">Book</button>
+        </form>
+
+    </mat-card>
+</div>
+

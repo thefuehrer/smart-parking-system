@@ -1,0 +1,11 @@
+.main-div{
+    width: 100%;
+}
+.mat-toolbar-part{
+    background: black;
+}
+.close-btn{
+    position: absolute;
+    right: 1rem;
+    margin-right: 6px;
+}

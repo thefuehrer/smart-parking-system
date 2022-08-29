@@ -1,0 +1,17 @@
+.navbar-text{
+    vertical-align: middle;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-navbar-light{
+    background-color: black;
+} 
+.login-signin-text{
+    color: white;
+    vertical-align: middle;
+    font-style: italic;
+    font-size:1rem;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+}
