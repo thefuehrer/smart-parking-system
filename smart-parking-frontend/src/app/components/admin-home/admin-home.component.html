@@ -1,0 +1,27 @@
+<div class="container" style="margin-top:4rem;">
+  <button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <br>
+  <br>
+<table class="table">
+    <thead>
+      <tr  style="background-color:black; color:white;">
+        <th scope="col">Booking Id</th>
+        <th scope="col">Slot No</th>
+        <th scope="col">Vehicle No</th>
+        <th scope="col">Booked For(In hours)</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  style="background-color:white;" *ngFor="let iter of this.list">
+        <td>{{iter.bookingId}}</td>
+        <td>{{iter.slotNo}}</td>
+        <td>{{iter.vehicleNo}}</td>
+        <td>{{iter.bookedTo}}</td>
+        <td><a (click)="toDelete(iter.bookingId)"><mat-icon>delete</mat-icon></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

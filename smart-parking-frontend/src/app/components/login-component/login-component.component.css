@@ -1,0 +1,27 @@
+.main-div mat-card{
+    padding: 0;
+}
+.login-form{
+    padding:20px;
+    background-color: rgb(244, 241, 237);
+}
+.register-link{
+    font-style: italic;
+    font-size:1rem;
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+}
+.register-link-div{
+    margin-top: 10px;
+    text-align:center;
+}
+.mat-toolbar-part{
+    background-color: black;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    margin-right: 6px;
+}
